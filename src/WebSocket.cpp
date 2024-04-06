@@ -141,4 +141,10 @@ namespace WebSocket
     WebSocket::m_socket.broadcastTXT(msg.c_str());
   }
 
+  void broadcastLux(const float &lux)
+  {
+    String msg = "{\"status\": " + String((int)FastLEDHub.getStatus()) + ", \"currentLux\": \"" + lux + "\"}";
+    WebSocket::m_socket.broadcastTXT(msg.c_str());
+  }
+
 } // namespace WebSocket
