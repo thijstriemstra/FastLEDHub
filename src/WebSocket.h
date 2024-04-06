@@ -15,4 +15,7 @@ namespace WebSocket
   /// Broadcast the current animation status to all active websocket connections
   void broadcastStatus();
 
+  /// Broadcast the current color to all active websocket connections
+  void broadcastColor();
+
 } // namespace Websocket
