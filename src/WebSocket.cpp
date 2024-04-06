@@ -135,4 +135,10 @@ namespace WebSocket
     WebSocket::m_socket.broadcastTXT(msg.c_str());
   }
 
+  void broadcastColor(const String &color)
+  {
+    String msg = "{\"status\": " + String((int)FastLEDHub.getStatus()) + ", \"currentColor\": \"" + color + "\"}";
+    WebSocket::m_socket.broadcastTXT(msg.c_str());
+  }
+
 } // namespace WebSocket
