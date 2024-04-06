@@ -18,4 +18,7 @@ namespace WebSocket
   /// Broadcast the current color to all active websocket connections
   void broadcastColor(const String &color);
 
+  /// Broadcast the current lux to all active websocket connections
+  void broadcastLux(const float &lux);
+
 } // namespace Websocket
