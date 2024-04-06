@@ -16,6 +16,6 @@ namespace WebSocket
   void broadcastStatus();
 
   /// Broadcast the current color to all active websocket connections
-  void broadcastColor();
+  void broadcastColor(const String &color);
 
 } // namespace Websocket
